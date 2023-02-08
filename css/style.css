@@ -7,7 +7,7 @@
     --grisClaro: #DFE9F3;
     --forgotColor: #002EFF;
     --celesteClaro: #6EEFFC; 
-
+    
 }
 
 html {
@@ -35,17 +35,22 @@ body {
     margin: 0 auto;
 }
 
-
 p {
     
     color: var(--oscuro);
     font-family: var(--fuentePrincipal);
     font-weight: 700;
 }
-
+/*Logo*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
 /**Formulario**/
 .formulario {
-    width: 100%;
     max-width: 600px;
     margin: 0 auto;
     display: flex;
@@ -65,6 +70,16 @@ p {
     outline: 0;
 }
 
+.campo {
+    margin-top: 2rem;
+}
+
+.campo label {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: .5rem;   
+}
+
 .boton__ingreso {
     margin-top: 1rem;
     width: 100%;
@@ -80,10 +95,7 @@ p {
     margin-bottom: 2rem;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: .3s ;
     transition-duration: .3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
 
 }
 
@@ -108,24 +120,6 @@ p {
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-}
-
-.campo {
-    margin-top: 2rem;
-}
-
-.campo label {
-    font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: .5rem;   
 }
 
 .footer p {
