@@ -48,6 +48,7 @@ p {
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 /**Formulario**/
 .formulario {
@@ -58,7 +59,14 @@ p {
     align-items: center;
     box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
     background-color: var(--blanco);
-    border-radius: 1rem;
+    margin-top: 5rem;
+}
+
+@media (min-width:  768px) {
+    .formulario {
+        margin-top: 5rem;
+        border-radius: 1rem;
+    }
 }
 
 .input_text {
@@ -127,4 +135,7 @@ p {
     margin-top: 10rem;
     font-weight: 400;
     font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
